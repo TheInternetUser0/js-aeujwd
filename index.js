@@ -1,4 +1,4 @@
-
+import './style.css';
 let num1 = 69
 let num2 = 96
 

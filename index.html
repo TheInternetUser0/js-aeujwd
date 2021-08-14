@@ -1,40 +1,50 @@
-
 <html>
+
 <head>
   <title>Calculator?</title>
 </head>
+
 <body>
+  <!-- <form>
+    <input type="text" id="num1In" value="First Number">
+    <input type="text" id="num2In" value="Second Number">
+  </form> -->
+  <p id="result"></p>
+  <div id="oprators">
+    <button id="add-btn" onclick="add()">Add</button>
+    <button id="sub-btn" onclick="subtract()">Subtract</button>
+    <button id="mul-btn" onclick="multiply()" >Multiply</button>
+    <button id="div-btn" onclick="divide()">Divide</button>
+  </div>
 
-<div id="oprators">
-<button id="add-btn" onclick="add()">Add</button>
-<button id="sub-btn" onclick="subtract()">Subtract</button>
-<button id="mul-btn" onclick="multiply()" >Multiply</button>
-<button id="div-btn" onclick="divide()">Divide</button>
-</div>
-
-<script type="text/javascript" src="index.js">
-let num1 = 69
-let num2 = 96
-
+  <script type="text/javascript" src="index.js">
+    let resultEl = document.getElementById("result")
+    let num1 = 69
+    let num2 = 96
+    
 function add() {
   let result = num1 + num2;
   console.log(result);
+  resultEl.textContent = result
 }
 function subtract() {
   let result = num1 - num2;
   console.log(result);
+  resultEl.textContent = result
 }
 
 function multiply() {
   let result = num1 * num2;
   console.log(result);
+  resultEl.textContent = result
 }
 
 function divide() {
   let result = num1 / num2;
   console.log(result);
+  resultEl.textContent = result
 }
-</script>
+  </script>
 </body>
 
 
